@@ -1,1 +1,12 @@
-
+gcc p3original.c
+ ./a.out
+enter a number3
+3 is a prime number. 
+ gcc p3original.c
+ ./a.out
+enter a number2
+2 is a prime number. 
+ gcc p3original.c
+ ./a.out
+enter a number4
+4 is not a prime number
