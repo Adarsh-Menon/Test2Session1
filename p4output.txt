@@ -1,1 +1,3 @@
-
+enter a number4
+Fibonacci series for 4 terms:-
+0 1 1 2 
