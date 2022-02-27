@@ -1,1 +1,5 @@
-
+enter the value for x
+4
+enter the value for y
+0
+the distance between point1(10.000000,0.000000) and point2(4.000000,0.000000) is 6.000000
