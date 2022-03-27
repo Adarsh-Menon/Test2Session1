@@ -1,46 +1,36 @@
 
-#include<stdio.h>
+#include <stdio.h>
 
-int input(){
+int input()
+{
   int n;
-  printf("enter a number");
+  printf("Enter the number\n");
   scanf("%d",&n);
   return n;
 }
-
-
-void find_fibo(int n)
+int find_fibo(int n)
 {
-   int i,c=0;
-   int a=0;
-   int b=1;
-   for(i=0;i<n;i++)
-   {
-       a=b;
-       b=c;
-       c=a+b;
-   }
-}
-
-void output(int n){
-  int i,c=0;
+  int fibo=0;
   int a=0;
   int b=1;
-  printf("Fibonacci series for %d terms:-\n",n);
-   for(i=0;i<n;i++)
-   {
-       printf("%d ",c);
-       a=b;
-       b=c;
-       c=a+b;
-   }
+  for(int i=0;i<n;i++) {
+    fibo = a;
+    a = b;
+    b = fibo + b;
+  }
+  return fibo;
 }
 
-int main() 
+
+void output(int n, int fibo)
 {
-   int n;    
-   n=input();
-   find_fibo(n);
-   output(n);
+  printf("the %dth fibonacci number is %d\n", n, fibo);
+}
+
+int main()
+{
+  int n = input();
+  int fibo = find_fibo(n);
+  output(n, fibo);
   return 0;
 }
